@@ -28,6 +28,10 @@ PRODUCT_PACKAGES += \
 
 $(call inherit-product-if-exists, device/xiaomi/camera/miuicamera.mk)
 
+# Miui Camera STLicense
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/camera/st_license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/st_license.lic
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
