@@ -36,6 +36,5 @@ PRODUCT_MODEL := POCO F3
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildFingerprint=google/husky_beta/husky:16/BP41.250822.010/14082742:user/release-keys
-
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := google/husky_beta/husky:16/BP41.250822.010/14082742:user/release-keys
