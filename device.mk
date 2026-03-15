@@ -35,6 +35,9 @@ $(call soong_config_set,xiaomi_kona,variant_lib,//$(LOCAL_PATH):libvariant_xiaom
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/st_license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/st_license.lic
 
+# Non-RRO VoltageOS Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-voltage
+
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlayDevice \
